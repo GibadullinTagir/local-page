@@ -1,0 +1,193 @@
+body {
+    background-color: #EFF6FF;
+    max-width: 1000%;
+    max-height: 1000%;
+    display: flex;
+    justify-content: center;
+    color: #2A4A5C;
+}
+
+
+/* 1)#3698FB нижняя кнопка 
+2)#7B8A92 серый текст*/
+.page {
+    width: 1000px;
+    height: 715px;
+    margin: 25px;
+    display: flex;
+    background-color: #FFFFFF;   
+}
+
+.page__left-side {
+    background: url(/img/bg.jpg) no-repeat;
+    background-size: cover; 
+    width: 500px;
+}
+
+.left-side__logo {
+    height: 50px;
+    width: 103px;
+    margin-left: 34px;
+    margin-top: 12px;
+}
+
+.page__right-side {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.header__info {
+    color:#96A5B1;
+    margin-bottom: 40px;
+}
+
+.right-side__authorization {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.authorization__btn {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 195px;
+    border: 0px;
+}
+
+.authorization__btn:focus {
+    opacity: 0.9;
+}
+
+.authorization__btn:active {
+    opacity: 0.6;
+}
+
+.btn__text {
+    margin-left: 15px;
+    color: white;
+    font-size: 12px;
+}
+
+.btn-facebook {
+    background-color: #255A9B;
+}
+
+.btn-linkedin {
+    background-color: #0076B6;
+}
+
+.right-side__or {
+    text-align: center;
+}
+
+.or__text::after ,
+.or__text::before{
+    content: "";
+    display: inline-block;
+    background-color: rgb(237, 229, 229);
+    height: 1px;
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* форма */
+.form__entry-field{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.entry-field__email ,
+.entry-field__phone {
+    width: 187px;
+    height: 35px;
+    box-shadow: 0 0 1px 0 ;
+    border: none;
+    border-left: 1px solid transparent;
+    padding-left: 7px;
+    padding-top: 5px;
+}
+
+.entry-field__lable-email {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 3px;
+    color: #96A5B1;
+}
+
+.entry-field__lable-phone {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 231px;
+    margin-top: 3px;
+    color: #96A5B1;
+}
+
+.entry-field__email:focus ,
+.entry-field__phone:focus {
+    outline: none;
+    border-left: 1px solid #3698FB;
+}
+
+.info__header {
+    font-size: 17px;
+}
+
+.info__text {
+    font-size: 12px;
+    color: #96A5B1;
+}
+
+.registration__info {
+    margin-bottom: 30px;
+}
+
+.registration__radio-btn {
+    margin-bottom: 70px;
+}
+
+.radio-btn__information {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #96A5B1 ;
+    border-radius: 50%;
+    font-size: 6px;
+    text-align: center;
+    margin-right: 19px;
+}
+
+.radio-btn__information:hover:after {
+    content: "I am a natural person investing on my own behalf as a sole owner,joint tenant, or tenant in common.";
+    position: absolute;
+    top: 397px;
+    left: 622px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 1px 20px 0px rgba(8, 0, 0, 0.2);
+}
+
+.soglashenie__checkbox-lable {
+    font-size: 12px;
+    color: #96A5B1;
+}
+
+.btn__submit {
+    width: 220px;
+    height: 30px;
+    color: white;
+    background-color: #3698FB;
+    border: none;
+    border-radius: 4px;
+}
