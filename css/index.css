@@ -1,14 +1,11 @@
 body {
     background-color: #EFF6FF;
-    
     display: flex;
     justify-content: center;
     color: #2A4A5C;
 }
 
 
-/* 1)#3698FB нижняя кнопка 
-2)#7B8A92 серый текст*/
 .page {
     width: 1000px;
     height: 715px;
@@ -94,7 +91,6 @@ body {
     margin-left: 10px;
 }
 
-
 /* форма */
 .form__entry-field{
     display: flex;
@@ -148,15 +144,11 @@ body {
     margin-bottom: 30px;
 }
 
-
-
-
 .registration__radio-btn {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
-
 }
 
 .radio-btn__information {
@@ -177,14 +169,10 @@ body {
 
 .radio-btn__information-box{
     display: none;
-    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-transition: 1s;
 }
 
 
 .radio-btn__information:hover +.radio-btn__information-box {
-    opacity:1; /*Элемент полностью прозрачный (невидимый)*/
-
     padding: 5px;
     display: flex;
     order: 1;
@@ -195,18 +183,6 @@ transition: 1s;
     background-color: white;
     box-shadow: 2px 1px 20px 0px rgba(8, 0, 0, 0.2);
 }
-
-/* .radio-btn__information:hover:after {
-    content: "I am a natural person investing on my own behalf as a sole owner,joint tenant, or tenant in common.";
-
-    padding: 5px;
-    font-size: 12px;
-    text-align: left;
-    height: 50px;
-    width: 200px;
-    background-color: white;
-    box-shadow: 2px 1px 20px 0px rgba(8, 0, 0, 0.2);
-} */
 
 .soglashenie__checkbox-lable {
     font-size: 12px;
