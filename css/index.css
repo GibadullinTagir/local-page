@@ -1,7 +1,6 @@
 body {
     background-color: #EFF6FF;
-    max-width: 1000%;
-    max-height: 1000%;
+    
     display: flex;
     justify-content: center;
     color: #2A4A5C;
@@ -39,6 +38,7 @@ body {
 }
 
 .header__info {
+    display: flex;
     color:#96A5B1;
     margin-bottom: 40px;
 }
@@ -46,7 +46,6 @@ body {
 .right-side__authorization {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .authorization__btn {
@@ -149,8 +148,15 @@ body {
     margin-bottom: 30px;
 }
 
+
+
+
 .registration__radio-btn {
-    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
 }
 
 .radio-btn__information {
@@ -164,12 +170,24 @@ body {
     margin-right: 19px;
 }
 
-.radio-btn__information:hover:after {
-    content: "I am a natural person investing on my own behalf as a sole owner,joint tenant, or tenant in common.";
-    position: absolute;
-    top: 397px;
-    left: 622px;
+.radio_btn__lable {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.radio-btn__information-box{
+    display: none;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+transition: 1s;
+}
+
+
+.radio-btn__information:hover +.radio-btn__information-box {
+    opacity:1; /*Элемент полностью прозрачный (невидимый)*/
+
     padding: 5px;
+    display: flex;
+    order: 1;
     font-size: 12px;
     text-align: left;
     height: 50px;
@@ -177,6 +195,18 @@ body {
     background-color: white;
     box-shadow: 2px 1px 20px 0px rgba(8, 0, 0, 0.2);
 }
+
+/* .radio-btn__information:hover:after {
+    content: "I am a natural person investing on my own behalf as a sole owner,joint tenant, or tenant in common.";
+
+    padding: 5px;
+    font-size: 12px;
+    text-align: left;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 1px 20px 0px rgba(8, 0, 0, 0.2);
+} */
 
 .soglashenie__checkbox-lable {
     font-size: 12px;
@@ -190,4 +220,8 @@ body {
     background-color: #3698FB;
     border: none;
     border-radius: 4px;
+}
+
+.registration__soglashenie {
+    margin-bottom: 30px;
 }
