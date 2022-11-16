@@ -5,7 +5,6 @@ body {
     color: #2A4A5C;
 }
 
-
 .page {
     width: 1000px;
     height: 715px;
@@ -53,11 +52,11 @@ body {
     border: 0px;
 }
 
-.authorization__btn:focus {
+.authorization__btn:focus ,.btn__submit:focus {
     opacity: 0.9;
 }
 
-.authorization__btn:active {
+.authorization__btn:active , .btn__submit:active {
     opacity: 0.6;
 }
 
