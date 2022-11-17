@@ -9,6 +9,9 @@ body {
     display: flex;
     justify-content: center;
     color: #2A4A5C;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .page {
@@ -20,7 +23,7 @@ body {
 }
 
 .page__left-side {
-    background: url(../img/bg.jpg) no-repeat;
+    background: url("../img/bg.jpg") no-repeat;
     background-size: cover; 
     width: 500px;
 }
